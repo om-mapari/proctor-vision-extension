@@ -8,6 +8,7 @@ form.addEventListener("submit", (event) => {
         testInvitation: document.getElementById("test_invitation").value,
     });
 
+    // console.log(data);
     fetch("http://localhost:3000/data", {
         method: "POST",
         headers: {
@@ -20,6 +21,6 @@ form.addEventListener("submit", (event) => {
             console.log(data);
             console.log("Data was saved on the server");
             // window.location.href='./videoCapture.html'
-            window.open("./capture.html", "_blank");
+            window.open("./videoCapture.html", "_blank");
         });
 });
