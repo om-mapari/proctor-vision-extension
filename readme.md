@@ -1,0 +1,1 @@
+### The Chrome extension is a powerful tool that prevents cheating during online assessments. With audio and video checks and image proctoring, it ensures the integrity of online tests and provides a seamless user experience.
