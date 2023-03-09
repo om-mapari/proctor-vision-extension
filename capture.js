@@ -54,7 +54,6 @@ window.addEventListener("load", function () {
         });
     }
 
-    // Set data in local storage
     function sendImageToServer(userid, imageData) {
 
         axios
@@ -64,7 +63,6 @@ window.addEventListener("load", function () {
             })
             .then((response) => {
                 interval = response.data.interval;
-                // multiFace = response.data.multiFace;
             })
             .catch((error) => {
                 console.log(error);
