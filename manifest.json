@@ -1,0 +1,9 @@
+{
+    "name":"Proctor Vision",
+    "description":"The Chrome extension is a powerful tool that prevents cheating during online assessments. With audio and video checks and image proctoring, it ensures the integrity of online tests and provides a seamless user experience.",
+    "version":"0.0.1",
+    "manifest_version":3,
+    "action":{
+        "default_popup":"index.html"
+    }
+}
