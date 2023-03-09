@@ -1,0 +1,53 @@
+.form{
+    background-color: aliceblue;
+    margin: 0 0;
+    padding: 0px 10px;
+    min-width: 100px;
+    width: 400px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    
+}
+.col {
+    padding: 20px 40px;
+    text-align: left;
+    margin: auto;
+}
+.form-control{
+    width: 80%;
+    border: none;
+    padding: 10px 25px;
+}
+
+label{
+    display: block;
+    text-align: left;
+}
+
+.btn{
+    padding: 15px 40px;
+    background-color: tomato;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: azure;
+    font-weight: 700;
+    margin-top: -40px;
+    margin-left: 120px;
+    margin-bottom: 50px;
+   
+}
+@media only screen and (max-width: 900px) {
+    .row {
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .row {
+        grid-template-columns: auto;
+        
+    }
+}
