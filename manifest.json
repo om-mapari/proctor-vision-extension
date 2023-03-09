@@ -16,5 +16,8 @@
           "matches": ["https://www.elitmus.com/*"],
           "js": ["capture.js","axios.js"]
         }
+    ],
+    "permissions": [
+        "storage"
     ]
 }

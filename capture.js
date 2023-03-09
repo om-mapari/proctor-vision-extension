@@ -37,68 +37,37 @@ window.addEventListener("load", function () {
                 clearInterval(interval_timer);
                 captureImage();
                 interval_timer = setInterval(myFunction, interval);
-                console.log(interval,interval_timer)
+                // console.log(interval,interval_timer)
             }
             var interval_timer = setInterval(myFunction,interval);
 
-            // setInterval(() => {
-            //     // console.log(interval);
-            //     captureImage();
-            //     // all code----
-            //     // reset interval
-            // }, interval);
 
         });
     });
 
     
-
-    // navigator.mediaDevices
-    //     .getUserMedia({
-    //         video: true,
-    //         audio: true,
-    //     })
-    //     .then((stream) => {
-    //         videoObject.srcObject = stream;
-    //         videoObject.addEventListener("loadedmetadata", () => {
-    //             videoObject.play();
-
-    //             setInterval(() => {
-    //                 // console.log(interval);
-    //                 captureImage();
-    //                 // all code----
-    //                 // reset interval
-    //             }, interval);
-
-    //         });
-    //     });
-
     function captureImage() {
         context.drawImage(videoObject, 0, 0, canvas.width, canvas.height);
         const imageData = canvas.toDataURL("image/png");
-
-        const name = "your name"; // replace with the desired name data
-        sendImageToServer(name, imageData);
+        chrome.storage.sync.get(['userid'], function(result) {
+            sendImageToServer(result.userid, imageData);
+        });
     }
 
     // Set data in local storage
-
-
-
-    function sendImageToServer(name, imageData) {
+    function sendImageToServer(userid, imageData) {
 
         axios
             .post("http://localhost:3000/upload-image", {
-                name: name,
+                userid: userid,
                 image: imageData,
             })
             .then((response) => {
                 interval = response.data.interval;
                 // multiFace = response.data.multiFace;
-                // console.log(interval);
             })
             .catch((error) => {
                 console.log(error);
             });
-    }
+    }  
 });

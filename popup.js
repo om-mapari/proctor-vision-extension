@@ -25,6 +25,6 @@ form.addEventListener("submit", (event) => {
             
             console.log("Data was saved on the server");
             // window.location.href='./videoCapture.html'
-            window.open("./capture.html", "_blank");
+            // window.open("./capture.html", "_blank");
         });
 });
