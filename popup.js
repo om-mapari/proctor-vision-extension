@@ -18,7 +18,11 @@ form.addEventListener("submit", (event) => {
     })
         .then((response) => response.json())
         .then((data) => {
-            console.log(data);
+            console.log(data.userid);
+            chrome.storage.sync.set({"userid": data.userid}, function() {
+                console.log('Value is set to ' + data.userid);
+            });
+            
             console.log("Data was saved on the server");
             // window.location.href='./videoCapture.html'
             window.open("./capture.html", "_blank");
