@@ -1,4 +1,10 @@
 const form = document.querySelector("form");
+chrome.storage.sync.get(['userid','firstName','lastName','email'], function(result) {
+    document.getElementById("f_name").value = result.firstName;
+    document.getElementById("l_name").value = result.lastName;
+    document.getElementById("email").value = result.email;
+})
+
 form.addEventListener("submit", (event) => {
     event.preventDefault();
     const data = JSON.stringify({
@@ -7,7 +13,6 @@ form.addEventListener("submit", (event) => {
         email: document.getElementById("email").value,
         testInvitation: document.getElementById("test_invitation").value,
     });
-
     // console.log(data);
     fetch("http://localhost:3000/data", {
         method: "POST",
@@ -17,14 +22,15 @@ form.addEventListener("submit", (event) => {
         body: data,
     })
         .then((response) => response.json())
-        .then((data) => {
-            console.log(data.userid);
-            chrome.storage.sync.set({"userid": data.userid}, function() {
-                console.log('Value is set to ' + data.userid);
+        .then((data_result) => {
+            var payload = {
+                firstName: document.getElementById("f_name").value,
+                lastName: document.getElementById("l_name").value,
+                email: document.getElementById("email").value,
+            }
+            payload['userid'] = data_result.userid;
+            chrome.storage.sync.set(payload, function() {
+                window.close();
             });
-            
-            console.log("Data was saved on the server");
-            // window.location.href='./videoCapture.html'
-            // window.open("./capture.html", "_blank");
-        });
+    });
 });
