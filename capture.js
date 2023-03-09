@@ -21,8 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // interval *= 10;
                 captureImage();
                 interval_timer = setInterval(myFunction, interval);
-                console.log(interval,interval_timer)
-
+                console.log(interval," || ",interval_timer)
             }
             var interval_timer = setInterval(myFunction,interval);
 
