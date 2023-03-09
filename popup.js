@@ -22,7 +22,7 @@ form.addEventListener("submit", (event) => {
     });
     console.log(data);
     if (!formValidation(firstName, lastName, email, testInvitation)) {
-        alert("Incorrect from data");
+        alert("Incorrect Form data");
         return;
     }
     fetch("http://localhost:3000/createUser", {
