@@ -55,7 +55,7 @@ Proctor Vision Chrome Extension is a tool that prevents cheating during online a
 - It also displays images along with there timestamps
 
 ## Architecture
-![My image](https://i.ibb.co/Y2zzxC8/pv.png)
+![My image](https://res.cloudinary.com/dt9ckenyh/image/upload/v1678414881/my-images/Proctor_Vision_e1ccdv.png)
 
 ## 🚀 About Me
 I'm a full stack developer...
