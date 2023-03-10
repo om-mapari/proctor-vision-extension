@@ -39,18 +39,19 @@ Proctor Vision Chrome Extension is a tool that prevents cheating during online a
 ## Features
 
 ### Frontend (Chrome Extension)
-
-- A Chrome extension that allows users to input their details through a form with test Test invitation code:
-- It stores form details in chrome local storage. Form Auto-fills for next online test with the details stored in local storage.
+- Detect Multiple tabs
+- Allows users to input their details through a form with test Test invitation code.
+- Form Auto-fills for next online test with the details stored in local storage.
 - Upon clicking the "Start Test" button, the user's information saved to the backend server.
-- The extension performs audio and video requirement checks and displays the candidate's live webcam feed on the page.
-- It also sends images of the user from the browser to the server at configurable intervals.
-
+- The extension performs audio and video requirement checks.
+- Displays the candidate's live webcam feed on the page.
+- Sends images of the user from the browser to the server at configurable intervals.
 
 ### Backend [Proctor Vision Backend API Reference](https://github.com/om-mapari/proctor-vision-backend)
 - A backend API to store all user information and images.
 - Images are stored in on cloud data storage `cloudinary storage`
 - Images are stored along with timestamps.
+- Handle Set Interval Route
 
 
 ### Admin Dashboard
