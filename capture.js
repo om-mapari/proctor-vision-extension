@@ -11,6 +11,14 @@ canvasElement.setAttribute("id", "canvas-element");
 var axiosScript = document.createElement("script");
 axiosScript.src = "axios.js"
 
+setInterval(()=>{
+    chrome.storage.sync.get(['tabs_count'], function(result) {
+        if(result.tabs_count > 1) {
+            alert("Multiple tabs detected");
+        }
+    });
+},5000)
+
 window.addEventListener("load", function () {
     const element = document.getElementsByTagName("body")[0];
     element.appendChild(videoElement)
