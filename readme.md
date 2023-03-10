@@ -4,6 +4,7 @@
 ![Logo](https://res.cloudinary.com/dt9ckenyh/image/upload/v1678423049/my-images/icon3_zkbhum.png)
 
 
+
 ## About
 
 Proctor Vision Chrome Extension is a tool that prevents cheating during online assessments. With audio and video checks and image proctoring, it ensures the integrity of online tests and provides a seamless user experience.
@@ -59,6 +60,21 @@ Proctor Vision Chrome Extension is a tool that prevents cheating during online a
 
 ## Architecture
 ![My image](https://res.cloudinary.com/dt9ckenyh/image/upload/v1678415195/my-images/Proctor_Vision_qkmqap.png)
+
+
+## Technologies Used
+- Workflow and Architecture Design
+    * Excalidraw
+- Prototyping and Frontend Design
+    * Figma
+- Frontend
+    * HTML
+    * CSS
+    * JS
+- Backend
+    * Node.js (Express.js)
+    * MongoDB
+    * cloudinary storage
 
 ## 🚀 About Me
 I'm a full stack developer...
