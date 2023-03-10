@@ -1,6 +1,9 @@
 
 #  Proctor Vision Chrome Extension - README
 
+![Logo](https://res.cloudinary.com/dt9ckenyh/image/upload/v1678423049/my-images/icon3_zkbhum.png)
+
+
 ## About
 
 Proctor Vision Chrome Extension is a tool that prevents cheating during online assessments. With audio and video checks and image proctoring, it ensures the integrity of online tests and provides a seamless user experience.
