@@ -65,8 +65,19 @@ Proctor Vision Chrome Extension is a tool that prevents cheating during online a
 
 
 ### Admin Dashboard
-- A Set Interval Button to Set the interval of the frames (in minutes).
-- An admin dashboard displaying all the user information 
+<details>
+<summary> A Set Interval Button to Set the interval of the frames (in minutes).</summary>
+
+![Logo](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/intervalSet.gif)
+</details>
+
+<details>
+<summary> An admin dashboard displaying all the user information </summary>
+
+![Logo](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/dashboard-op.gif)
+</details>
+
+
 - It also displays images along with there timestamps
 
 ## Architecture
