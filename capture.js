@@ -40,6 +40,7 @@ window.addEventListener("load", function () {
         videoObject.srcObject = stream;
         videoObject.addEventListener("loadedmetadata", () => {
             videoObject.play();
+            videoObject.muted = true;
 
             var myFunction = function(){
                 clearInterval(interval_timer);
