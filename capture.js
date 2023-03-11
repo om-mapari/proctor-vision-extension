@@ -8,8 +8,6 @@ videoElement.style.height = '200px';
 videoElement.style.width = '400px';
 var canvasElement = document.createElement("canvas");
 canvasElement.setAttribute("id", "canvas-element");
-var axiosScript = document.createElement("script");
-axiosScript.src = "axios.js"
 
 setInterval(()=>{
     chrome.storage.sync.get(['tabs_count'], function(result) {
@@ -63,18 +61,26 @@ window.addEventListener("load", function () {
         });
     }
 
-    function sendImageToServer(userid, imageData) {
 
-        axios
-            .post("http://localhost:3000/upload-image", {
-                userid: userid,
-                image: imageData,
-            })
-            .then((response) => {
-                interval = response.data.interval;
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-    }  
+    function sendImageToServer(userid, imageData) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'http://localhost:3000/upload-image');
+        xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                var response = JSON.parse(xhr.responseText);
+                interval = response.interval;
+            } else {
+                console.log('Request failed.  Returned status of ' + xhr.status);
+            }
+        };
+        xhr.onerror = function () {
+            console.log('Request failed.  Please check your network connection.');
+        };
+        xhr.send(JSON.stringify({
+            userid: userid,
+            image: imageData,
+        }));
+    }
+     
 });
