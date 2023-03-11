@@ -43,6 +43,7 @@ Proctor Vision Chrome Extension is a tool that prevents cheating during online a
 ![Logo](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs/multitabs.gif)
 
 - Allows users to input their details through a form with test Test invitation code.
+![login](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs/login.gif)
 - Form Auto-fills for next online test with the details stored in local storage.
 - Upon clicking the "Start Test" button, the user's information saved to the backend server.
 - The extension performs audio and video requirement checks.
