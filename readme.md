@@ -45,6 +45,7 @@ Proctor Vision Chrome Extension is a tool that prevents cheating during online a
 ![Logo](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/multitabs.gif)
 </details>
 <details>
+
 <summary> Allows users to input their details through a form with test Test invitation code</summary>
 
 ![Logo](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/login.gif)
@@ -74,7 +75,7 @@ Proctor Vision Chrome Extension is a tool that prevents cheating during online a
 
 ## Technologies Used
 - Workflow and Architecture Design
-    * Excalidraw
+    * [Excalidraw](https://excalidraw.com/)
 - Prototyping and Frontend Design
     * Figma
 - Frontend
