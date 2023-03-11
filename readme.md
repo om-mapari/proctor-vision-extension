@@ -42,12 +42,12 @@ Proctor Vision Chrome Extension is a tool that prevents cheating during online a
 <details>
 <summary> Detect Multiple tabs</summary>
 
-![Logo](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs/multitabs.gif)
+![Logo](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/multitabs.gif)
 </details>
 <details>
 <summary> Allows users to input their details through a form with test Test invitation code</summary>
 
-![Logo](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs/login.gif)
+![Logo](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/login.gif)
 </details>
 
 - Form Auto-fills for next online test with the details stored in local storage.
