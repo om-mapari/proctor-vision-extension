@@ -13,27 +13,14 @@ Proctor Vision Chrome Extension is a tool that prevents cheating during online a
     
 ## Installation
 
-```
-1. Download the Proctor Vision Chrome Extension zip file from the GitHub repository.
-```
-```
-2. Extract the contents of the zip file to a folder on your computer.
-```
-```
-3. Open the Chrome browser and type "chrome://extensions/" in the address bar.
-```
-```
-4. Enable Developer mode by clicking the toggle switch in the top right corner of the page.
-```
-```
-5. Click the "Load unpacked" button in the top left corner of the page.
-```
-```
-6. Select the folder where you extracted the extension files in step 2.
-```
-```
-6. The Proctor Vision Chrome Extension will be added to your browser and ready to use on supported online assessment websites.
-```
+- Download the Proctor Vision Chrome Extension zip file from the GitHub repository.
+- Extract the contents of the zip file to a folder on your computer.
+- Open the Chrome browser and type `chrome://extensions/` in the address bar.
+- Enable Developer mode by clicking the toggle switch in the top right corner of the page.
+- Click the `Load unpacked` button in the top left corner of the page.
+- Select the folder where you extracted the extension files in step 2.
+- The Proctor Vision Chrome Extension will be added to your browser and ready to use on supported online assessment websites.
+- Please Ensure that backend is setted up on `localhost:3000`
 
 
 ## Features
