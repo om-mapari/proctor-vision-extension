@@ -26,17 +26,14 @@ Proctor Vision Chrome Extension is a tool that prevents cheating during online a
 ## Features
 
 ### Frontend (Chrome Extension)
-<details>
-<summary> Detect Multiple tabs</summary>
 
-![Logo](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/multitabs.gif)
-</details>
-<details>
+- Allows users to input their details through a form with test Test invitation code
 
-<summary> Allows users to input their details through a form with test Test invitation code</summary>
+![login](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/login.gif)
 
-![Logo](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/login.gif)
-</details>
+- Detect Multiple tabs
+
+![multitabs](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/multitabs.gif)
 
 - Form Auto-fills for next online test with the details stored in local storage.
 - Upon clicking the "Start Test" button, the user's information saved to the backend server.
@@ -52,17 +49,16 @@ Proctor Vision Chrome Extension is a tool that prevents cheating during online a
 
 
 ### Admin Dashboard
-<details>
-<summary> A Set Interval Button to Set the interval of the frames (in minutes).</summary>
 
-![Logo](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/intervalSet.gif)
-</details>
 
-<details>
-<summary> An admin dashboard displaying all the user information </summary>
+- An admin dashboard displaying all the user information 
 
-![Logo](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/dashboard-op.gif)
-</details>
+![dashboard](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/dashboard-op.gif)
+
+
+- A Set Interval Button to Set the interval of the frames (in minutes).</
+
+![interval](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/intervalSet.gif)
 
 
 - It also displays images along with there timestamps
