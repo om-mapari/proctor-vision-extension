@@ -21,7 +21,6 @@ window.addEventListener("load", function () {
     const element = document.getElementsByTagName("body")[0];
     element.appendChild(videoElement)
     element.appendChild(canvasElement)
-    element.appendChild(axiosScript)
     const videoObject = document.getElementById("video");
     const canvas = document.getElementById("canvas-element");
     canvas.style.display = "none";
