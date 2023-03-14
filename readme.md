@@ -13,43 +13,27 @@ Proctor Vision Chrome Extension is a tool that prevents cheating during online a
     
 ## Installation
 
-```
-1. Download the Proctor Vision Chrome Extension zip file from the GitHub repository.
-```
-```
-2. Extract the contents of the zip file to a folder on your computer.
-```
-```
-3. Open the Chrome browser and type "chrome://extensions/" in the address bar.
-```
-```
-4. Enable Developer mode by clicking the toggle switch in the top right corner of the page.
-```
-```
-5. Click the "Load unpacked" button in the top left corner of the page.
-```
-```
-6. Select the folder where you extracted the extension files in step 2.
-```
-```
-6. The Proctor Vision Chrome Extension will be added to your browser and ready to use on supported online assessment websites.
-```
+- Download the Proctor Vision Chrome Extension zip file from the GitHub repository.
+- Extract the contents of the zip file to a folder on your computer.
+- Open the Chrome browser and type `chrome://extensions/` in the address bar.
+- Enable Developer mode by clicking the toggle switch in the top right corner of the page.
+- Click the `Load unpacked` button in the top left corner of the page.
+- Select the folder where you extracted the extension files in step 2.
+- The Proctor Vision Chrome Extension will be added to your browser and ready to use on supported online assessment websites.
+- Please Ensure that backend is setted up on `localhost:3000`
 
 
 ## Features
 
 ### Frontend (Chrome Extension)
-<details>
-<summary> Detect Multiple tabs</summary>
 
-![Logo](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/multitabs.gif)
-</details>
-<details>
+- Allows users to input their details through a form with test Test invitation code
 
-<summary> Allows users to input their details through a form with test Test invitation code</summary>
+![login](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/login.gif)
 
-![Logo](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/login.gif)
-</details>
+- Detect Multiple tabs
+
+![multitabs](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/multitabs.gif)
 
 - Form Auto-fills for next online test with the details stored in local storage.
 - Upon clicking the "Start Test" button, the user's information saved to the backend server.
@@ -65,17 +49,16 @@ Proctor Vision Chrome Extension is a tool that prevents cheating during online a
 
 
 ### Admin Dashboard
-<details>
-<summary> A Set Interval Button to Set the interval of the frames (in minutes).</summary>
 
-![Logo](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/intervalSet.gif)
-</details>
 
-<details>
-<summary> An admin dashboard displaying all the user information </summary>
+- An admin dashboard displaying all the user information 
 
-![Logo](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/dashboard-op.gif)
-</details>
+![dashboard](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/dashboard-op.gif)
+
+
+- A Set Interval Button to Set the interval of the frames (in minutes).</
+
+![interval](https://github.com/om-mapari/proctor-vision-extension/blob/master/gifs%20images/intervalSet.gif)
 
 
 - It also displays images along with there timestamps
@@ -110,7 +93,6 @@ I'm a final-year IT undergraduate student. I love solving problems related to Da
 ## Authors
 
 - [@om-mapari](https://www.github.com/om-mapari)
-
 
 ## Contributing
 
